@@ -23,5 +23,18 @@ function randomColor() {
         "rgba(" + 
         Math.round(Math.random() * 250) + 
         "," +
-    )
+        Math.round(Math.random() * 250) + 
+        "," +
+        Math.round(Math.random() * 250) +
+        "," +
+        Math.ceil(Math.random() * 10) / 10 +
+        ")"
+    );
+}
+
+function Ball() {
+    this.color = randomColor();
+    this.radius = Math.random() * 20 + 14;
+    this.startradius = this.radius;
+    this.x = Math.random() * (tx - this.radius * 2) + this.radius;
 }
