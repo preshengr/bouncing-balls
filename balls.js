@@ -11,3 +11,17 @@ canvas.height = ty;
 
 var mousex = 0;
 var mousey = 0;
+
+addEventListener("mousemove", function() {
+    mousex = event.clientX;mousey = event.clientY;
+})
+
+var grav = 0.99;
+c.strokeWidth=5;
+function randomColor() {
+    return (
+        "rgba(" + 
+        Math.round(Math.random() * 250) + 
+        "," +
+    )
+}
